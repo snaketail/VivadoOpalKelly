@@ -1,0 +1,543 @@
+
+*** Running vivado
+    with args -log First.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source First.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source First.tcl -notrace
+Command: synth_design -top First -part xc7a50tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'First' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:34]
+INFO: [Synth 8-3491] module 'okHost' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:16' bound to instance 'okHI' of component 'okHost' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'okHost' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:28]
+INFO: [Synth 8-113] binding component instance 'hi_in0_bufg' to cell 'IBUFG' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:76]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 20.833000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 4.500000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm0' to cell 'MMCME2_BASE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:78]
+INFO: [Synth 8-113] binding component instance 'mmcm0_bufg' to cell 'BUFG' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:98]
+INFO: [Synth 8-113] binding component instance 'mmcm0fb_bufg' to cell 'BUFG' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:99]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'iobf0' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:106]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdrein0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:113]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout0' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:122]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'fdreout1' of component 'FDRE' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:130]
+INFO: [Synth 8-113] binding component instance 'obuf0' to cell 'OBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:141]
+INFO: [Synth 8-113] binding component instance 'obuf1' to cell 'OBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:142]
+INFO: [Synth 8-113] binding component instance 'tbuf' to cell 'IOBUF' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:143]
+INFO: [Synth 8-3491] module 'okCoreHarness' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okCoreHarness.v:9408' bound to instance 'core0' of component 'okCoreHarness' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:145]
+INFO: [Synth 8-6157] synthesizing module 'GND' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:28816]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (2#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:28816]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (3#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (4#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (5#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (5#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27973]
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27973]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized6' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized7' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized7' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized8' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized8' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized9' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized9' (8#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:104652]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (9#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:104652]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1487]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (10#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1487]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v13_2_5' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okCoreHarness.v:9878]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (10#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (10#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59136]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized4' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59174]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized10' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized10' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59262]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT1__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1__parameterized0' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized1' (11#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:97817]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:97817]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized9' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized5' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized6' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized7' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59216]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized10' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized11' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized12' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized13' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v13_2_5' (13#1) [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okCoreHarness.v:9878]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:26096]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (15#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:26096]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27621]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (16#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27621]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27777]
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (17#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27777]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized14' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized0' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized15' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized16' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized1' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized2' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized3' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized17' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized4' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized18' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized5' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized19' (18#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'RAM128X1S' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:92783]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128X1S' (19#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:92783]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized6' (19#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized20' (19#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized7' (19#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:93030]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized9' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized10' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized11' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized21' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized22' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized12' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized13' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized23' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized14' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized15' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized16' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized24' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized17' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized18' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized19' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized20' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized25' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized26' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized21' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59358]
+INFO: [Synth 8-6157] synthesizing module 'RAMB18E1__parameterized0' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:97817]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB18E1__parameterized0' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:97817]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized27' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized28' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized28' (20#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'okHost' (23#1) [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:28]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'okWireOR' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:151' bound to instance 'okWO' of component 'okWireOR' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'okWireOR' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:160]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'okWireOR' (24#1) [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okLibrary.vhd:160]
+INFO: [Synth 8-3491] module 'okWireIn' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okWireIn.v:18' bound to instance 'ep00' of component 'okWireIn' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:70]
+INFO: [Synth 8-3491] module 'okWireIn' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okWireIn.v:18' bound to instance 'ep01' of component 'okWireIn' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:71]
+INFO: [Synth 8-3491] module 'okWireIn' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okWireIn.v:18' bound to instance 'ep02' of component 'okWireIn' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:72]
+INFO: [Synth 8-3491] module 'okWireOut' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okWireOut.v:18' bound to instance 'ep20' of component 'okWireOut' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:73]
+INFO: [Synth 8-3491] module 'okWireOut' declared at 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Vivado-2021/okWireOut.v:18' bound to instance 'ep21' of component 'okWireOut' [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'First' (27#1) [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/First.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:30]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'hi_in[0]' relative to clock 'okHostClk' defined on the same pin is not supported, ignoring it [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:65]
+WARNING: [Constraints 18-6211] Setting input delay on a clock pin 'hi_in[0]' relative to clock 'okHostClk' defined on the same pin is not supported, ignoring it [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc:66]
+Finished Parsing XDC File [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/XEM7010-VHDL/xem7010.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/First_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/First_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |CARRY4      |    30|
+|3     |DNA_PORT    |     1|
+|4     |LUT1        |    45|
+|5     |LUT2        |    57|
+|6     |LUT3        |    24|
+|7     |LUT4        |   144|
+|8     |LUT5        |    53|
+|9     |LUT6        |   296|
+|11    |MMCME2_BASE |     1|
+|12    |RAM128X1S   |     8|
+|13    |RAM32M      |     4|
+|14    |RAMB18E1    |     2|
+|16    |FDCE        |   104|
+|17    |FDPE        |    27|
+|18    |FDRE        |   477|
+|19    |FDSE        |    10|
+|20    |IBUF        |     7|
+|21    |IBUFG       |     1|
+|22    |IOBUF       |    17|
+|23    |OBUF        |     3|
+|24    |OBUFT       |     8|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1123.273 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 81 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Synth Design complete, checksum: 95784779
+INFO: [Common 17-83] Releasing license: Synthesis
+305 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1123.273 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Test.runs/synth_1/First.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file First_utilization_synth.rpt -pb First_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 23:51:32 2022...

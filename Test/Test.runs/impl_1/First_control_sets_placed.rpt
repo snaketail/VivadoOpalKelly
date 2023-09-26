@@ -1,0 +1,118 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue May 10 23:52:33 2022
+| Host         : 5FL1Q73 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file First_control_sets_placed.rpt
+| Design       : First
+| Device       : xc7a50t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   109 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     7 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             141 |           58 |
+| No           | No                    | Yes                    |              11 |            6 |
+| No           | Yes                   | No                     |              25 |           12 |
+| Yes          | No                    | No                     |              84 |           24 |
+| Yes          | No                    | Yes                    |             120 |           29 |
+| Yes          | Yes                   | No                     |             190 |           45 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                                 Enable Signal                                |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/pc0/flag_enable                                          | okHI/core0/core0/a0/pc0/internal_reset                         |                1 |              2 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/a0/lc12c7095b9bc056c60880aeb6055afb1          |                3 |              3 |         1.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/ld307737e57d50d07f937891de086bf8e_i_1_n_0     |                1 |              4 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/lf2d689afa99d0d626f608c2120f93acd[8]_i_1_n_0  |                3 |              4 |         1.33 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/FSM_sequential_l8ff940a6bfc33211f22a7ff95e39fe60[3]_i_1_n_0 |                                                                |                2 |              4 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l885bbeb94996347da66a8546671e4990[19]_i_1_n_0               |                                                                |                1 |              4 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/leeb76b405f165a9b4ab0606f3ea0b3c4[7]_i_1_n_0                |                                                                |                1 |              4 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/l90ce46b343647bab4d280b5afc506219                        | okHI/core0/core0/a0/lc12c7095b9bc056c60880aeb6055afb1          |                1 |              4 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/p_0_in0                                                  |                                                                |                1 |              4 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/a0/pc0/internal_reset                         |                3 |              6 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/d0/lfd4ae1d2a2f83cc540ba2af5c1891381                     | okHI/core0/core0/lab4325c385c0fcaa4cd26acd21308822             |                2 |              6 |         3.00 |
+|  okHI/mmcm0_bufg_n_0 | ep00/ep_datahold[15]_i_1_n_0                                                 | okHI/core0/core0/lfc9af733ef9b7e7ec2ccb35c062a12d3[25]         |                1 |              7 |         7.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/lab8c81cec3709c0416d0acf79f37f087[15]_i_1_n_0               |                                                                |                2 |              7 |         3.50 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l92ae5a5037b0cc87c9562f3e505d14cf[6]_i_2_n_0                | okHI/core0/core0/l92ae5a5037b0cc87c9562f3e505d14cf[6]_i_1_n_0  |                2 |              7 |         3.50 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/lbe59f904be1e8440c2d6333521aaa29a[7]_i_1_n_0                |                                                                |                1 |              8 |         8.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/a0/l770e51175fa898662b06f9e3b71c7bff[7]       |                4 |              8 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l885bbeb94996347da66a8546671e4990[15]_i_1_n_0               |                                                                |                2 |              8 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l885bbeb94996347da66a8546671e4990[7]_i_1_n_0                |                                                                |                1 |              8 |         8.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l9f43dc9d3787a4c1395542a254aee157[7]_i_1_n_0                |                                                                |                4 |              8 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/l37dbd1aafb403530c46407234a8f7286                        |                                                                |                2 |              8 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/lab8c81cec3709c0416d0acf79f37f087[15]_i_1_n_0               | okHI/core0/core0/lab8c81cec3709c0416d0acf79f37f087[11]_i_1_n_0 |                3 |              9 |         3.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l84a7b0e1b51dfdd46f041d49e77ce017[23]_i_2_n_0               |                                                                |                5 |             10 |         2.00 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              | okHI/core0/core0/lab4325c385c0fcaa4cd26acd21308822             |                4 |             11 |         2.75 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/le4c4532ac06490aa5cc2f8d669975cdc[10]_i_1_n_0               |                                                                |                2 |             11 |         5.50 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l18905be285ee66e0e6fb566993b0399b                           | okHI/core0/core0/lab4325c385c0fcaa4cd26acd21308822             |                4 |             11 |         2.75 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/ram_wr_en       | okHI/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf          |                4 |             12 |         3.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/ram_rd_en       | okHI/core0/core0/a0/l62a5479e7989ce7f4d5507c695cc69cf          |                3 |             12 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/pc0/WE                                                   | okHI/core0/core0/a0/pc0/internal_reset                         |                3 |             12 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l84a7b0e1b51dfdd46f041d49e77ce017[23]_i_2_n_0               | okHI/core0/core0/l84a7b0e1b51dfdd46f041d49e77ce017[23]_i_1_n_0 |                5 |             14 |         2.80 |
+|  okHI/mmcm0_bufg_n_0 | ep01/ep_datahold[15]_i_1_n_0                                                 | okHI/core0/core0/lfc9af733ef9b7e7ec2ccb35c062a12d3[25]         |                3 |             16 |         5.33 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/pc0/WE                                                   |                                                                |                2 |             16 |         8.00 |
+|  okHI/mmcm0_bufg_n_0 | ep02/ep_datahold[15]_i_1_n_0                                                 | okHI/core0/core0/lfc9af733ef9b7e7ec2ccb35c062a12d3[25]         |                3 |             16 |         5.33 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/pc0/spm_enable                                           |                                                                |                4 |             16 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/pc0/register_enable                                      |                                                                |                2 |             16 |         8.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/FSM_onehot_l6d7b501652de6ba8ba55082874707b2a[16]_i_1_n_0    | okHI/core0/core0/lab4325c385c0fcaa4cd26acd21308822             |                4 |             17 |         4.25 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/l4f8cd1ab062f5571ff66db47e3d281bf[19]_i_1_n_0               | okHI/core0/core0/a0/lc12c7095b9bc056c60880aeb6055afb1          |                5 |             21 |         4.20 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/a0/le7badcf1256ff8aabbffe7a6a1b38b5f_reg_inv_n_0            | okHI/core0/core0/a0/lc12c7095b9bc056c60880aeb6055afb1          |                8 |             32 |         4.00 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/lfc9af733ef9b7e7ec2ccb35c062a12d3[28]                       | okHI/core0/core0/lfc9af733ef9b7e7ec2ccb35c062a12d3[25]         |                9 |             55 |         6.11 |
+|  okHI/mmcm0_bufg_n_0 | okHI/core0/core0/le5e2e6110dd7478b8ed0143f21b04d30[56]_i_1_n_0               | okHI/core0/core0/lab4325c385c0fcaa4cd26acd21308822             |               13 |             57 |         4.38 |
+|  okHI/mmcm0_bufg_n_0 |                                                                              |                                                                |               58 |            141 |         2.43 |
++----------------------+------------------------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
+
+

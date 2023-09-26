@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May 10 23:50:51 2022
+# Process ID: 24376
+# Current directory: C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Test.runs/synth_1
+# Command line: vivado.exe -log First.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source First.tcl
+# Log file: C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Test.runs/synth_1/First.vds
+# Journal file: C:/Users/yuhu0001.KEYSIGHT/FPGA/Test/Test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source First.tcl -notrace
