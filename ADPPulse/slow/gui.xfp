@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+First FrontPanel Example
+Copyright (c) 2004, Opal Kelly Incorporated
+-->
+
+<resource version="2.3.0.1">
+
+<object class="okPanel" name="panel1">
+	<title>First FrontPanel Example</title>
+	<size>550,260</size>
+	
+	<object class="okStaticText">
+		<label>ADP Pulse Panel</label>
+		<position>220,30</position>
+		<size>200,60</size>
+	</object>
+	
+	<object class="okStaticText">
+		<position>20,80</position>
+		<size>100,45</size>
+		<label>Quench Duration</label>
+	</object>
+	<object class="okDigitEntry">
+		<position>130,75</position>
+		<size>60,25</size>
+		<tooltip>Quench Delay Duration</tooltip>
+		<radix>16</radix>
+		<minvalue>1</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x00</endpoint>
+		<bit>0</bit>
+		<value>5</value>
+	</object>
+	<object class="okStaticText">
+		<position>200,80</position>
+		<size>100,45</size>
+		<label>Clock Cycle</label>
+	</object>
+
+	<object class="okStaticText">
+		<position>20,140</position>
+		<size>100,45</size>
+		<label>Wait duration</label>
+	</object>
+	<object class="okDigitEntry">
+		<position>130,135</position>
+		<size>60,25</size>
+		<tooltip>Wait before reset Duration</tooltip>
+		<radix>16</radix>
+		<minvalue>1</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x01</endpoint>
+		<bit>0</bit>
+		<value>5</value>
+	</object>
+	<object class="okStaticText">
+		<position>200,140</position>
+		<size>100,45</size>
+		<label>Clock Cycle</label>
+	</object>
+	
+	<object class="okStaticText">
+		<position>20,200</position>
+		<size>100,45</size>
+		<label>Reset duration</label>
+	</object>
+	<object class="okDigitEntry">
+		<position>130,195</position>
+		<size>60,25</size>
+		<tooltip>Reset Pulse Duration</tooltip>
+		<radix>16</radix>
+		<minvalue>1</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x02</endpoint>
+		<bit>0</bit>
+		<value>5</value>
+	</object>
+	<object class="okStaticText">
+		<position>200,200</position>
+		<size>100,45</size>
+		<label>Clock Cycle</label>
+	</object>
+	
+	<object class="okStaticText">
+		<position>300,80</position>
+		<size>150,45</size>
+		<label>Avalanche Counter</label>
+	</object>
+	<object class="okDigitDisplay">
+		<position>410,75</position>
+		<size>60,25</size>
+		<tooltip>Total Counter Number</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x21</endpoint>
+		<bit>0</bit>
+	</object>	
+	<object class="okDigitDisplay">
+		<position>470,75</position>
+		<size>60,25</size>
+		<tooltip>Total Counter Number</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x20</endpoint>
+		<bit>0</bit>
+	</object>
+	
+	
+	<object class="okTriggerButton">
+		<label>- _Counter Clear -</label>
+		<position>300,135</position>
+		<size>115,30</size>
+		<endpoint>0x40</endpoint>
+		<bit>0</bit>
+		<tooltip>Reset Counter</tooltip>
+	</object>
+	
+	<object class="okTriggerButton">
+		<label>- _Send Apd -</label>
+		<position>420,135</position>
+		<size>115,30</size>
+		<endpoint>0x40</endpoint>
+		<bit>1</bit>
+		<tooltip>Send Sim Apd Pulse</tooltip>
+	</object>
+	
+	<object class="okToggleButton">
+		<label>_Start / Stop</label>
+		<position>350,195</position>
+		<size>115,30</size>
+		<endpoint>0x03</endpoint>
+		<bit>0</bit>
+		<tooltip>Start/Stop the Apd counter</tooltip>
+	</object>
+
+</object>
+
+</resource>
